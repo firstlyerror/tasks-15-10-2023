@@ -343,26 +343,37 @@ console.log(arr4sum)
 
 
 // 3.Count only the values that are true
+count=0;
 arr4.map((item)=>{
-    if(item){
-        console.log(item)
-    }})
+ if( item){
+   count++
+   console.log(count,item)
+     }} 
+   )
 
 
 
 
 // 4.Count only the values that are string
+count=0;
 arr4.map((item)=>{
-   if(typeof item==="string"){
-            console.log(item) }})
+    if(typeof item==="string"){
+        count++
+             console.log(count,item) }})
 
 
 // 5.Count only the values that are false
+              
+count=0;
 arr4.map((item)=>{
  if(! item){
-    console.log(item) }})
+   count++
+   console.log(count,item)
+     }} 
+   )                                     |
+                                         V
 
-
+                //NOTE: actually I can write with Loop but I want to use array.methods.(This message which I wrote belongs to counts)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                                                                                               /////TASK10//////
