@@ -10,7 +10,7 @@ city varchar(50))
 select * from Students
 insert into Students(firstName,lastName,age.university,city)
 values('perviz','Qarayev','27','sdu','Baku')
-  --burada ozum elave etdim editleyerek midterm var idi ona gore vaxt qazanmaq istedim
+  --burada ozum elave etdim editleyerek(sol ekrandan edit top 200 rows) midterm var idi ona gore vaxt qazanmaq istedim
 --4
 select * from Students
 --5
@@ -45,9 +45,9 @@ select distinct(firstName) from Students
 select sum(age)
  from Students
 --16
-select min(age)  from students 
+select top 1 * from Students oreder by age asc
 --17 
-select max(age) from Students
+select top 1 * from Students oreder by age desc
 --18 
 select count(*) from Students
 --19
