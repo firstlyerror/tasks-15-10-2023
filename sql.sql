@@ -67,5 +67,5 @@ where age between 22 and 29
 --23
 select top 4 * from students
 --24
-delete from Students
+drop table Students
 select * from Students
